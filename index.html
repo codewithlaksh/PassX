@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX - Online Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">PassX</a>
+        <ul class="nav-list">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Contact Us</li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <h1 class="section--heading">Welcome to PassX</h1>
+        <p class="section--sub-heading">Manage your passwords securely</p>
+
+        <form action="#" id="userForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="website">Website URL</label>
+                <input type="url" class="form-control" id="website" name="website" placeholder="Enter website url">
+            </div>
+            <button type="button" class="action--btn" id="add">Add Password</button>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Website</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+        <button type="button" class="action--btn" id="clear">Clear Data</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

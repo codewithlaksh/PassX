@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: #333;
+}
+
+a.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.nav-list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item{
+    font-weight: 500;
+    margin: 0 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.nav-item:hover {
+    opacity: 0.8;
+}
+
+.container {
+    margin: 12px auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.section--heading {
+    text-align: center;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.section--sub-heading {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #000;
+    opacity: 0.6;
+}
+
+.table {
+    margin: 36px auto;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: 1px solid #000;
+}
+
+th, td {
+    padding: 6px;
+}
+
+tr {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #eee;
+}
+
+.action--btn {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.action--btn#add {
+    background: black;
+}
+
+.action--btn#clear {
+    display: none;
+    margin-top: 4px;
+    background: black;
+}
+
+.action--btn.copy {
+    background: green;
+}
+
+.action--btn.delete {
+    background: red;
+}
+
+.form-group {
+    margin: 1rem auto;
+}
+
+.form-control {
+    display: block;
+    width: 80%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 6px;
+    border: 1px solid darkgray;
+}
