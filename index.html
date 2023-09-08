@@ -20,7 +20,7 @@
         <h1 class="section--heading">Welcome to PassX</h1>
         <p class="section--sub-heading">Manage your passwords securely</p>
 
-        <form action="#" id="userForm">
+        <form action="#" id="userAddForm">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
@@ -35,6 +35,27 @@
             </div>
             <button type="button" class="action--btn" id="add">Add Password</button>
         </form>
+
+        <div id="modal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h1>Edit User Details</h1>
+                    <span id="closeBtn"><i class="fa fa-close"></i></span>
+                </div>
+                <form action="#" id="userEditForm">
+                    <input type="hidden" name="userID" id="userID" value="">
+                    <div class="form-group">
+                        <label for="passwordEdit">Password</label>
+                        <input type="password" class="form-control" id="passwordEdit" name="passwordEdit" placeholder="Enter your password" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="websiteEdit">Website URL</label>
+                        <input type="url" class="form-control" id="websiteEdit" name="websiteEdit" placeholder="Enter website url">
+                    </div>
+                    <button type="button" class="action--btn" id="update">Update Password</button>
+                </form>
+            </div>
+        </div>
 
         <table class="table">
             <thead>
